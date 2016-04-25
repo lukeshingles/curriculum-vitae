@@ -1,2 +1,4 @@
 TSWLatexianTemp_*
-
+*.aux
+*.log
+*.out
