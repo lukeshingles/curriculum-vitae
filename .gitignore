@@ -2,3 +2,6 @@ TSWLatexianTemp_*
 *.aux
 *.log
 *.out
+*.synctex.*
+*.fdb_latexmk
+*.fls
