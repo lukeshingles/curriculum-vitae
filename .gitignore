@@ -5,3 +5,4 @@ TSWLatexianTemp_*
 *.synctex.*
 *.fdb_latexmk
 *.fls
+.tags
