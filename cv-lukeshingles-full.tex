@@ -1,0 +1,260 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wilson Resume/CV
+% XeLaTeX Template
+% Version 1.0 (22/1/2015)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Howard Wilson (https://github.com/watsonbox/cv_template_2004) with
+% extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article} % Default font size
+
+\input{structure.tex} % Include the file specifying document layout
+
+\newcommand{\highlight}[1]{\textbf{#1}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Luke Shingles, PhD} % , BSc Hons, BInfoTech SoftEng QUT
+
+%------------------------------------------------
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{2.3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Location} \> Belfast, Northern Ireland,\\ % Address line 1
+\> United Kingdom \\ % Address line 2
+% {\bf Date of Birth} \> 7$^{th}$ September 1979 \\ % Date of birth
+{\bf Citizenship} \> Australian, Irish % Nationality
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing} % Enables tabbing
+\hspace{2.3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+% {\bf Home Phone} \> +0 (000) 111 1111 \\ % Home phone
+{\bf Email} \> \href{mailto:luke.shingles@gmail.com}{luke.shingles@gmail.com} \\ % Email address
+{\bf Mobile} \> +44 7462 625 608‬ \\ % Mobile phone
+{\bf LinkedIn} \> \href{https://www.linkedin.com/in/lukeshingles/}{linkedin.com/in/lukeshingles/}\\
+{\bf GitHub} \> \href{https://github.com/lukeshingles}{github.com/lukeshingles}
+\end{tabbing}}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL PROFILE
+%----------------------------------------------------------------------------------------
+\section{Personal Statement}
+I am an experienced researcher with skills in scientific software development, data analysis, and visualisation. I would be particularly interested in opportunities to apply GPU hardware, image processing, and machine learning algorithms.
+
+% I have experience developing and using software on various supercomputers to solve systems of differential equations (e.g., for stellar structure and nuclear reaction networks) and carry out large-scale (>1000 core) Monte Carlo simulations of radiation and particle transport.
+
+Some of my highlights have included: writing high-performance parallel code to numerically solve systems of differential equations (e.g., to model chemical enrichment of stellar clusters and high-energy particle interactions), using matrix-based methods for solving large systems of linear equations (to determine atomic level populations), and applying Monte Carlo techniques to simulate photon interactions (radiative transfer) in three dimensions within material ejected from supernova explosions. My analysis of my theoretical simulations running on thousands of CPU cores and the comparison to real-world observations has led to research insights that have been published in peer-reviewed scientific journals.\\
+
+I have:
+\begin{itemize}
+  \item Over four years full-time paid experience developing numerically-intensive software for scientific research (C/C++)
+  \item Expertise with multithreading and parallel algorithms (OpenMP, MPI, and CUDA)
+  \item Expertise with debugging, performance profiling, and optimisation (gdb, perf)
+  \item Experience with collaborative development using version control (Git), continuous integration, and automated testing
+  \item Over eight years experience in scientific research with publications in peer-reviewed  journals
+  \item Expertise building tools to process and visualise large data sets to extract meaningful insights (Python with numpy, pandas, and matplotlib)
+  \item Expertise in statistics, differential equations, and linear algebra (machine learning fundamentals)
+\end{itemize}
+
+
+
+\section{Education and Employment}
+
+\job
+{Aug 2015 -}{Mar 2021}
+% {Astrophysicist and Software Engineer}
+{Postdoctoral Researcher}
+{}
+{Queen's University Belfast, Northern Ireland}
+{\begin{itemize-noindent}
+\item{Lead developer on a radiative transfer code for large-scale simulations ($\sim$50k core-hour) and an associated set of analysis/plotting tools for use by a group of researchers.}
+\item{Implemented several matrix-based numerical solvers and Monte Carlo statistical estimators to model the relevant plasma conditions and radiation transport physics.}
+\item{Developed an initial port of the simulation to GPU-accelerated CUDA C++ that resulted in 4-5x speedup.}
+\item{Other tasks included giving conference presentations and lectures, writing research papers, reports, and grant applications, supervision of Masters and PhD students, and volunteering as the Postdoctoral Representative for the School of Mathematics \& Physics.}
+\end{itemize-noindent}
+\textbf{Technologies:} C/C++, Git, Python (Numpy/Pandas/Matplotlib), OpenMP, MPI, CUDA\\
+}
+
+\job{2012-2015}{}
+{Doctor of Philosophy (Astrophysics)}
+{}{Australian National University}
+{
+\href{https://openresearch-repository.anu.edu.au/handle/1885/16507}{Thesis: Neutron-Capture Nucleosynthesis and the Chemical Evolution of Globular Clusters}\\
+Primary Supervisor: Dr. Amanda Karakas
+% Advisors: David Yong, Gary Da Costa, John Lattanzio (Monash), Richard Stancliffe (Bonn)\\
+\begin{itemize-noindent}
+  \item Computed numerical simulations of low-mass stars on Linux-based high-performance compute clusters (NCI Raijin system).
+  \item Developed Fortran/OpenMP code to solve a system of differential equations to model chemical production in galaxies.
+  \item Published insights from simulation results in peer-reviewed journals with implications for the evolution of low-mass stars and the origins of chemical elements in the universe.
+  \item Paid work as teaching assistant for courses on first-year physics, third-year astrophysics, and online courses on cosmology and exoplanets.
+\end{itemize-noindent}
+\textbf{Technologies:} Fortran, OpenMP, Git, Python (Matplotlib), Mathematica
+}
+
+\job{2008-2011}{}
+{Bachelor of Science with Honours (First Class)}
+{}{Australian National University}
+{
+Honours Thesis: The Sulfur Anomaly in Planetary Nebulae and Post-AGB Stars\\
+% Department: Research School of Astronomy \& Astrophysics\\
+% Honours Supervisor: Amanda Karakas\\
+Honours grade: 86\% (First Class)\\
+Majors: Astronomy \& Astrophysics, Theoretical Physics, Mathematics\\
+Course grade average: 80\% (High Distinction)\\
+Selected results:
+\begin{tabbing}\hspace{5pt} \= \hspace{9cm} \= \kill
+\>\+\textit{Games, Graphs, and Machines} \> 85\% High Distinction\\
+\textit{Maths Methods 1 Honours: Ordinary differential}\\\textit{\quad equations and advanced vector calculus} \> 85\% High Distinction \\
+\textit{Maths Methods 2 Honours: Partial differential}\\\textit{\quad equations, Fourier analysis, and complex analysis} \> 78\% Distinction \\
+\textit{Theoretical Physics} \> 87\% High Distinction \\
+\textit{Applied Algebra 1 Honours: Groups}\\\textit{\quad rings, and advanced linear algebra} \> 78\% Distinction \\
+\textit{Number theory and cryptography} \> 83\% High Distinction
+\end{tabbing}
+}
+
+\job{2003-2007}{}
+{Bachelor of Information Technology}
+{}{Queensland University of Technology}
+{
+Major: Software Engineering
+}
+
+% \section{Awards and Scholarships}
+%   RSAA Alex Rodgers Travelling Scholarship, 2014\\
+%   Astronomical Society of Australia Travel Assistance, 2014\\
+%   RSAA Honourable Mention for Best Student Paper Prize, 2013\\
+%   IAU Travel Grant for Lijiang, China, IAUS298, 2013\\
+%   Australian Postgraduate Award PhD Scholarship, 2012-2015\\
+%   International Year of Astronomy Honours Scholarship, 2011\\
+%   RSAA Summer Research Scholarship, 2010
+
+\section{Service and Committees}
+  QUB School of Maths and Physics Postdoctoral Society Representative, Jan 2016--present\\
+  QUB School of Maths and Physics Athena SWAN committee for gender equality, Jan 2016--present\\
+  QUB ARC Supernova Journal Club coordinator, Oct 2015--Oct 2016\\
+  ANU RSAA Stellar Lunch coordinator, Feb 2014--Nov 2014\\
+  ANU RSAA Computer Committee, Oct 2013--Apr 2015
+
+\section{Technical Presentations}
+  Plenary talk, Supernova Workshop at Heidelberg Institute of Theoretical Studies, Heidelberg, Germany, December 2019\\
+  Contributed talk, The extragalactic explosive Universe: the new era of transient surveys and data-driven discovery, Garching, Germany, September 2019\\
+  Contributed talk, Workshop on Radiative Transfer in Supernovae, Garching, Germany, August 2019\\
+  Contributed talk, XIXth Workshop on Nuclear Astrophysics, Ringberg, Germany, March 2019\\
+  Invited Colloquium, ASTRON Institute for Radio Astronomy, Dwingeloo, Netherlands, November 2018\\
+  Contributed Talk, Radiation Transfer and Explosive Thermonuclear Burning in Supernovae, Rehovot, Israel, June 2018\\
+  Poster Presentation, Supernovae From Simulations to Observations and Nucleosynthetic Fingerprints, Bad Honnef, Germany, January 2017\\
+  Contributed Talk, Supernovae: The Outliers, Garching, Germany, September 2016\\
+  Contributed Talk, RAS National Astronomy Meeting, Nottingham, UK, July 2016\\
+  Contributed Talk, 18th Workshop on Nuclear Astrophysics, Ringberg, Germany, March 2016\\
+  Group Talk at Stars Meeting, Institute of Astronomy, Cambridge, UK, Nov 2015\\
+  Seminar, QUB, Belfast, UK, Oct 2015\\
+  Contributed Talk, ASA AGM, Perth, Australia, July 2015\\
+  Contributed Talk, ANITA Workshop, Canberra, Australia, Feb 2015\\
+  Contributed Talk, Mount Stromlo Student Christmas Seminars, Canberra, Australia, Nov 2014\\
+  Group Talk at Stars Meeting, Institute of Astronomy, Cambridge, UK, Sept 2014\\
+  % Poster Presentation, Why Galaxies Care About AGB Stars, Vienna, Austria, July 2014\\
+  Contributed Talk, Nucleosynthesis in AGB Stars, Bad Honnef, Germany, July 2014\\
+  Contributed Talk, Overcoming Great Barriers in Galactic Archaeology II, Palm Cove, Australia, 2014\\
+  Group Talk at Stellar Lunch, ANU RSAA, Australia, August 2013\\
+  % Poster Presentation, IAUS298 Setting the Scene for GAIA and LAMOST, Lijiang, China, May 2013\\
+  % Poster Presentation, Astronomical Society of Australia Meeting, Sydney, Australia, 2012\\
+  % Poster Presentation, Astronomical Society of Australia Meeting, Adelaide, Australia, 2011
+
+\section{Teaching Experience}
+  {\it Level Four MSci Project} \hfill Queen's University Belfast\\
+  \null\hfill Sept 2017 -- Jan 2018\\
+  Co-supervised two MSci students with projects on positron emission from Type Ia supernovae
+  and high-mass stellar evolution with helium-rich abundances.\\
+
+  {\it PHY1001 Foundation Physics} \hfill Queen's University Belfast\\
+  \null\hfill Oct 2017\\
+  Presented lectures on circular motion and simple harmonic oscillators.\\
+
+  {\it ANU-ASTRO2x Exoplanets} \hfill Australian National University\\
+  \null\hfill Jun--Sep 2015\\
+  Teaching assistant for edX online course run by Brian Schmidt and Paul Francis on exoplanet search techniques -- pulsar timing, radial-velocity variations, transits, microlensing, and direct imaging with adaptive optics.\\
+
+  {\it ANU-ASTRO1x Greatest Unsolved Mysteries of the Universe}, \hfill Australian National University\\
+  \null\hfill Mar--Jun 2015\\
+  Teaching assistant for edX online course run by Brian Schmidt and Paul Francis covering the expanding universe, dark energy, dark matter, and gamma-ray bursts.\\
+
+  {\it ASTR3007 From Stars to Galaxies} \hfill Australian National University\\
+  \null\hfill Feb--Jun 2013 and May--Jun 2014\\
+  Teaching assistant for the third-year course on stellar evolution \& nucleosynthesis, galactic structure \& dynamics, and introductory computer programming. Duties included marking assignments and answering student questions in the classroom.\\
+
+  {\it PHYS1201 Physics 2} \hfill Australian National University\\
+  \null\hfill Jul--Nov 2012 and Jul--Nov 2013\\
+  Teaching assistant for first-year course covering introductory special relativity, electromagnetism, waves \& optics, and thermodynamics. Duties included marking assignments and answering student questions in the classroom.
+
+% \section{Referees}
+%   \textbf{Dr. Stuart Sim}\\
+%   Lecturer, Centre for Astrophysics Research\\
+%   Queen's University Belfast, UK\\
+%   stuart.sim@anu.edu.au
+%
+%   \textbf{Dr. Amanda Karakas}\\
+%   Lecturer, School of Physics & Astronomy\\
+%   Monash University, Australia\\
+%   amanda.karakas@monash.edu
+%
+%   \textbf{Prof. Gary Da Costa}\\
+%   Professor, Research School of Astronomy \& Astrophysics\\
+%   Australian National University\\
+%   gary.dacosta@anu.edu.au
+
+
+\section{Refereed Journal Articles}
+\begin{itemize-noindent}
+
+\input{publicationlist.tex}
+
+\end{itemize-noindent}
+
+%----------------------------------------------------------------------------------------
+%	REFEREE SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Referees}
+%
+% \parbox{0.5\textwidth}{ % First block
+% \begin{tabbing}
+% \hspace{2.75cm} \= \hspace{4cm} \= \kill % Spacing within the block
+% {\bf Name} \> Bill Lumbergh \\ % Referee name
+% {\bf Company} \> Initech Inc. \\ % Referee company
+% {\bf Position} \> Vice President \\ % Referee job title
+% {\bf Contact} \> \href{mailto:bill@initech.com}{bill@initech.com} % Referee contact information
+% \end{tabbing}}
+% \hfill % Horizontal space between the two blocks
+% \parbox{0.5\textwidth}{ % Second block
+% \begin{tabbing}
+% \hspace{2.75cm} \= \hspace{4cm} \= \kill % Spacing within the block
+% {\bf Name} \> Michael "Big Mike" Tucker\\ % Referee name
+% {\bf Company} \> Burbank Buy More \\ % Referee company
+% {\bf Position} \> Store Manager \\ % Referee job title
+% {\bf Contact} \> \href{mailto:mike@buymore.com}{mike@buymore.com} % Referee contact information
+% \end{tabbing}}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

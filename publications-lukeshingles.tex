@@ -1,0 +1,17 @@
+\documentclass[]{article}
+\usepackage{helvetica}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\pagenumbering{gobble}
+\newcommand{\highlight}[1]{\textbf{#1}}
+\newcommand{\article}[3]{\flushleft{\color{black} #1}\\{#2}\\\textit{#3}}
+\usepackage{geometry}
+\geometry{a4paper, total={210mm,297mm}, left=30mm, right=30mm, top=40mm, bottom=40mm}
+
+\begin{document}
+\section*{Refereed Journal Articles}
+
+\input{publicationlist.tex}
+
+\end{document}
