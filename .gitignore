@@ -6,3 +6,4 @@ TSWLatexianTemp_*
 *.fdb_latexmk
 *.fls
 .tags
+.DS_Store
