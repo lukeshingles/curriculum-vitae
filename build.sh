@@ -1,4 +1,4 @@
 #!/usr/bin/env zsh
 
-xelatex cv-lukeshingles-full
+xelatex cv-lukeshingles
 pdflatex publications-lukeshingles
