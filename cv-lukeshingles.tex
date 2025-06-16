@@ -25,23 +25,15 @@
 
 \newcommand{\highlight}[1]{\textbf{#1}}
 
-%----------------------------------------------------------------------------------------
-
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
-
 \title{Luke Shingles, PhD} % , BSc Hons, BInfoTech SoftEng QUT
-
-%------------------------------------------------
 
 \parbox{0.5\textwidth}{ % First block
 \begin{tabbing} % Enables tabbing
 \hspace{2.3cm} \= \hspace{4cm} \= \kill % Spacing within the block
 {\bf Location} \> Belfast, Northern Ireland, UK\\
-{\bf Citizenship} \> Australian, Irish\\
+{\bf Citizenship} \> Australia, Ireland\\
 {\bf Email} \> \href{mailto:luke.shingles@gmail.com}{luke.shingles@gmail.com}
 \end{tabbing}}
 \hfill % Horizontal space between the two blocks
@@ -52,33 +44,35 @@
 {\bf GitHub} \> \href{https://github.com/lukeshingles}{github.com/lukeshingles}\\
 \end{tabbing}}
 
-%----------------------------------------------------------------------------------------
-%	PERSONAL PROFILE
-%----------------------------------------------------------------------------------------
-\section{Personal Statement}
-I am an experienced astrophysics researcher with expertise in Monte Carlo radiative transfer simulations for modeling the light curves and spectra of supernovae and kilonovae. Since becoming the lead developer of the ARTIS radiative transfer code in 2015, I have extended the capabilities of the code while speeding up existing functionality by 7.15x without loss of accuracy (measured Sim+2010 1.06Msun model on 960 cores of GSI Virgo cluster development branch on June 5, 2025 versus 2014 code version). I also created an associated python package of analysis and plotting tools (artistools) that is widely used within the artis collaboration.
+% \section{Personal Statement}
+I am an experienced astrophysicist with expertise in developing and running Monte Carlo radiative transfer simulations for modelling the light curves and spectra of supernovae and kilonovae.
 
-I have also extended the code to operate in non-LTE conditions for nebular-phase, incorporating additional atomic data (e.g., for forbidden transitions, non-thermal collisions, and heavier elements), generalised the treatment of radioactive decay to include alpha and beta decays, and added time-dependent particle thermalisation physics for kilonovae.
+I became the lead developer of the ARTIS radiative transfer code in 2015, adding new capabilities for modelling conditions in the nebular phase of Type Ia supernovae, including solvers for non-LTE excitation and ionisation balance and collisions with fast (non-thermal) electrons. These features have enabled published work on Type Ia supernovae by other researchers and will continue to be important for future application to kilonovae.
 
+Since beginning a postdoctoral position at GSI in 2021, I have adapted the ARTIS code for kilonovae with a generalised treatment of radioactive alpha and beta decays and a time-dependent treatment of particle thermalisation. This work and the associated publication (Shingles et al. 2023) have brought ARTIS to a leading position for performing physically accurate multi-dimensional radiative transfer calculations for kilonovae. Together with my collaborators at GSI, QUB, and the HEAVYMETAL group, this leadership will soon extend to kilonova modelling at late times (beyond one week) as new atomic data enables us to apply our non-LTE capabilities to produce accurate nebular spectra for neutron-star merger models.
+
+As well as adding new capabilities to the code, I have significantly improved the performance of the ARTIS code (7.1 times faster than pre-2015 code on GSI Virgo cluster) and reviewed code from other contributors. My implementations of automated testing and continuous integration have allowed for rapid collaborative development of new features while minimising the risk of breaking existing functionality.
+
+I have developed new open-source Python packages to handle common analysis and plotting tasks for ARTIS users (artistools), and to convert atomic data from various sources into the formats required by ARTIS (artistatomic).
+
+I have a strong track record of obtaining scientific insights from computationally demanding theoretical work, having given many talks at professional conferences and institutes, and authoring well-cited articles in peer-reviewed journals. I have contributed as a co-investigator on successful research grants and HPC computing time proposals for international facilities, and been co-PI on two successful grants at the Jülich Supercomputing Centre (JSC).
+
+Within the School of Mathematics and Physics, I have volunteered as a Postdoctoral Representatives and am a member of the Athena SWAN committee for gender equality. In these roles, I have organised social events to build connections between people in different research clusters, organised career information days with invited speakers, and supported efforts to improve diversity in STEM careers.
 
 %Some of my research software engineering highlights include writing high-performance parallel code to numerically solve systems of differential equations (to model chemical enrichment of stellar clusters and high-energy particle interactions), using matrix-based methods for solving large systems of linear equations (to determine atomic level populations), and applying Monte Carlo techniques to simulate radiative transfer (light-matter interactions) in three dimensions. I have contributed to open source software used in research, and advocated for software engineering best-practices in collaborative projects.\\
 
-%I have a strong track record of obtaining scientific insights from computationally demanding theoretical work, having given many scientific talks at professional conferences and institutes, and published articles in peer-reviewed science journals. I have contributed as a co-investigator on successful research grants and HPC computing time proposals for international facilities.
-
 %I enjoy teaching and have chosen to gain experience tutoring and lecturing undergraduate physics, and co-supervised PhD, Master's, and Google Summer of Code students on a variety of projects in astrophysics and software development.\\
 %
-% Within the School of Mathematics and Physics, I have volunteered as a Postdoctoral Representatives and am a member of the Athena SWAN committee for gender equality. In these roles, I have organised social events to build connections between people in different research clusters, organised career information days with invited speakers, and supported efforts to improve diversity in STEM careers.\\
 
-
-I have expertise in:
-\begin{itemize}
-  \item Leading the development of numerically-intensive C++ code for 3D radiative transfer simulations
-  \item Performance optimisation with multithreading and parallel algorithms (OpenMP and MPI)
-  \item Collaborative development with version control (Git), continuous integration, and automated testing
-  \item Scientific research and publishing in peer-reviewed journals
-  \item Developing tools to process and visualise large data sets to extract meaningful insights (Python with polars, pandas, and matplotlib)
-  \item Statistics, differential equations, and linear algebra (machine learning fundamentals)
-\end{itemize}
+% I have expertise in:
+% \begin{itemize}
+%   \item Leading the development of numerically-intensive C++ code for 3D radiative transfer simulations
+%   \item Performance optimisation with multithreading and parallel algorithms (OpenMP and MPI)
+%   \item Collaborative development with version control (Git), continuous integration, and automated testing
+%   \item Scientific research and publishing in peer-reviewed journals
+%   \item Developing tools to process and visualise large data sets to extract meaningful insights (Python with polars, pandas, and matplotlib)
+%   \item Statistics, differential equations, and linear algebra (machine learning fundamentals)
+% \end{itemize}
 
 
 
@@ -88,15 +82,16 @@ I have expertise in:
 {Oct 2021--}{}
 {Postdoctoral Researcher}
 {}
-{GSI Helmholzzentrum für Schwerionenforschung, Darmstadt, Germany}
+{GSI Helmholzzentrum für Schwerionenforschung, Darmstadt, Germany (remote)}
 {\begin{itemize-noindent}
-\item{Adapted the ARTIS radiative transfer code for application to kilonova modelling - relativistic corrections, particle thermalisation physics, and generalised radioactive decay treatment.}
-\item{Published in scientific journals, including a first-author paper in Astrophysical Journal Letters.}
+\item{Adapted ARTIS for kilonova modelling with relativistic corrections, time-dependent particle thermalisation, and generalised radioactive decay handling.}
+\item{Published refereed papers on radiative transfer, including a first-author paper in Astrophysical Journal Letters.}
 \item{Created the pynonthermal package for rapid prototyping of non-thermal particle distributions.}
 \item{Co-PI on two successful proposals for computing time on the JUWELS cluster at Juelich Supercomputing Centre (JSC).}
-\item{Modernised and improved the ARTIS codebase, including training other researchers in best practices for collaborative software development and testing.}
+\item{Modernised the ARTIS codebase, with optimisations resulting in a 7.15x performance improvement in classic-mode compared to pre-2015 code (measured Sim+2010 1.06Msun model development branch on June 5, 2025 versus 2014 code on 960 cores of GSI Virgo cluster)}
+\item{Trained other researchers in best practices for collaborative software development and testing.}
 \end{itemize-noindent}
-\textbf{Technologies:} C++, Python (Numpy/Polars/Pandas/Matplotlib), Rust, Git, OpenMP, MPI\\
+\textbf{Technologies:} C++, Python (Numpy/Polars/Pandas/Matplotlib), Rust, Git, OpenMP, MPI
 }
 
 \job
@@ -107,13 +102,13 @@ I have expertise in:
 {Queen's University Belfast, Northern Ireland}
 {\begin{itemize-noindent}
 \item{Became the lead developer on the ARTIS radiative transfer code, adding non-LTE capabilities (non-thermal ionisation/exciation, arbitrary radiation field model, statistical balance population solver)}
-\item{Created new open-source tools for analysis/visualisation of output data (artistools), conversion of external atomic data formats (artisatomic) that are in use by ~10 researchers.}
-\item{Presented research at international conferences, contributed to peer-reviewed publication, grant applications, and computing-time proposals.}
+\item{Created new open-source tools for analysis/visualisation of output data (artistools) and conversion of external atomic data formats (artisatomic).}
+\item{Published two first-author refereed papers, presented at international conferences, and contributed publications, grant applications, and computing-time proposals.}
 \item{Supervised Masters and PhD student research projects.}
 \item{Volunteered as the Postdoctoral Representative for the School of Mathematics \& Physics and member of the ATHENA SWAN committee for gender equality.}
-\item{Built the \href{https://fallingstar-data.com/forcedphot/}{ATLAS Forced Photometry service}, which has over 1150 registered users.}
+\item{Built the \href{https://fallingstar-data.com/forcedphot/}{ATLAS Forced Photometry service}, which has over 1,830 registered users and 280 monthly active users.}
 \end{itemize-noindent}
-\textbf{Technologies:} C, Python (Numpy/Pandas/Matplotlib), Git, OpenMP, MPI\\
+\textbf{Technologies:} C, Python (Numpy/Pandas/Matplotlib), Git, OpenMP, MPI
 }
 
 \job{2012--2015}{}
@@ -125,7 +120,7 @@ Primary Supervisor: Dr. Amanda Karakas
 % Advisors: David Yong, Gary Da Costa, John Lattanzio (Monash), Richard Stancliffe (Bonn)\\
 \begin{itemize-noindent}
   \item Computed numerical simulations of low-mass stars on Linux-based high-performance compute clusters (NCI Raijin system).
-  \item Developed Fortran+OpenMP code to solve a system of differential equations to model chemical evolution in galaxies.
+  \item Developed Fortran+OpenMP code to model chemical evolution in galaxies by numerically solving a system of differential equations.
   \item Published three first-author papers in peer-reviewed journals with insights into the evolution of low-mass stars and the origins of chemical elements in the universe.
   \item Teaching assistant for courses on first-year physics, third-year astrophysics, and online courses on cosmology and exoplanets.
 \end{itemize-noindent}
@@ -141,16 +136,16 @@ Honours Thesis: The Sulfur Anomaly in Planetary Nebulae and Post-AGB Stars\\
 % Honours Supervisor: Amanda Karakas\\
 Honours grade: 86\% (First Class)\\
 Majors: Astronomy \& Astrophysics, Theoretical Physics, Mathematics\\
-Course grade average: 80\% (High Distinction)\\
-Selected results:
-\begin{tabbing}\hspace{5pt} \= \hspace{9cm} \= \kill
-\>\+\textit{Games, Graphs, and Machines} \> 85\% High Distinction\\
-\textit{Maths Methods 1 Honours: Ordinary differential}\\\textit{\quad equations and advanced vector calculus} \> 85\% High Distinction \\
-\textit{Maths Methods 2 Honours: Partial differential}\\\textit{\quad equations, Fourier analysis, and complex analysis} \> 78\% Distinction \\
-\textit{Theoretical Physics} \> 87\% High Distinction \\
-\textit{Applied Algebra 1 Honours: Groups}\\\textit{\quad rings, and advanced linear algebra} \> 78\% Distinction \\
-\textit{Number theory and cryptography} \> 83\% High Distinction
-\end{tabbing}
+Course grade average: 80\% (High Distinction)
+% Selected results:
+% \begin{tabbing}\hspace{5pt} \= \hspace{9cm} \= \kill
+% \>\+\textit{Games, Graphs, and Machines} \> 85\% High Distinction\\
+% \textit{Maths Methods 1 Honours: Ordinary differential}\\\textit{\quad equations and advanced vector calculus} \> 85\% High Distinction \\
+% \textit{Maths Methods 2 Honours: Partial differential}\\\textit{\quad equations, Fourier analysis, and complex analysis} \> 78\% Distinction \\
+% \textit{Theoretical Physics} \> 87\% High Distinction \\
+% \textit{Applied Algebra 1 Honours: Groups}\\\textit{\quad rings, and advanced linear algebra} \> 78\% Distinction \\
+% \textit{Number theory and cryptography} \> 83\% High Distinction
+% \end{tabbing}
 }
 
 \job{2003-2007}{}
@@ -238,8 +233,8 @@ Major: Software Engineering
 %   s.sim@qub.ac.uk
 %
 
-\section*{Publication List}
-As of June 9, 2025, I am the author of 38 refereed articles with a total of 5,262 citations, and my h-index is 18 (NASA ADS). I have led and published 6 first-author peer-reviewed articles, which have 168 citations. My (non-peer-reviewed) AstroNote announcing the release of the ATLAS Forced Photometry Service has 123 citations.
+\section*{Highlighted Publications}
+As of June 14, 2025, I am the author of 38 refereed articles with 5,293 citations and an h-index of 18 (\href{https://ui.adsabs.harvard.edu/search/q=author%3A%22Shingles%2C%20Luke%22&sort=citation_count%20desc%2C%20bibcode%20desc&p_=0}{NASA ADS author search}). I have published 6 first-author refereed articles, which have 168 citations. My AstroNote for the ATLAS Forced Photometry Service (not peer-reviewed) has 124 citations. With non-refereeed articles included, my total citation count is 5,606 and my h-index is 19.
 
 \begin{itemize-noindent}
 
